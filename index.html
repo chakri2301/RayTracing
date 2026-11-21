@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="image"></canvas>
+    <img>
+    <script>
+        const canvas = document.getElementById("image");
+        async function fetchdata() {
+            const res = await fetch("/out.ppm");
+            const text = await res.text();
+            console.log(text);
+        }
+        fetchdata();
+    </script>
+</body>
+
+</html>
