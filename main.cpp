@@ -31,7 +31,7 @@ color RayColor(ray r)
     }
     vec3 unitV = unitVector(r.direction());
     float a = 0.5 * (unitV.y + 1.0);
-    return (1.0 - a) * color(1.0, 1.0, 1.0) + a * color(0.0, 0.0, 0.0);
+    return  color(0.0, 0.0, 0.0) ;//(1.0 - a) * color(1.0, 1.0, 1.0) + a * color(0.0, 0.0, 0.0);
 }
 int main()
 {
